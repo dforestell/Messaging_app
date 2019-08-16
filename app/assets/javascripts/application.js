@@ -21,8 +21,13 @@ scrollBottom = function(){
   if ($('#messages').length > 0){
     $('#messages').scrollTop($('#messages')[0].scrollHeight)
   }
-
 }
+// clearMessage = function(){
+//   $('#new_message').submit(function(e){
+//     console.log('message posted')
+//     $('#new_message').find('input').val("")
+//   })
+// }
 
 $(document).on('turbolinks:load', function(){
   $('.ui.dropdown')

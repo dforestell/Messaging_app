@@ -7,4 +7,5 @@ App.chatroom = App.cable.subscriptions.create "ChatroomChannel",
 
   received: (data) ->
     $('#messages-container').append data.mod_message
+    $('#message_body').val("")
     scrollBottom()
