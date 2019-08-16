@@ -21,7 +21,12 @@ scrollBottom = function(){
   if ($('#messages').length > 0){
     $('#messages').scrollTop($('#messages')[0].scrollHeight)
   }
+}
 
+submitMessage = function(){
+  $('#message_body').on('keydown', function(e){
+    $('button').click()
+  })
 }
 
 $(document).on('turbolinks:load', function(){
