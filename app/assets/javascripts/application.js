@@ -22,12 +22,12 @@ scrollBottom = function(){
     $('#messages').scrollTop($('#messages')[0].scrollHeight)
   }
 }
-
-submitMessage = function(){
-  $('#message_body').on('keydown', function(e){
-    $('button').click()
-  })
-}
+// clearMessage = function(){
+//   $('#new_message').submit(function(e){
+//     console.log('message posted')
+//     $('#new_message').find('input').val("")
+//   })
+// }
 
 $(document).on('turbolinks:load', function(){
   $('.ui.dropdown')
