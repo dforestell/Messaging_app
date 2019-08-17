@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :require_user
 
   def index
-    @messages = Message.all
+    @messages = Message.displayed_messages
     @message = Message.new
   end
 
